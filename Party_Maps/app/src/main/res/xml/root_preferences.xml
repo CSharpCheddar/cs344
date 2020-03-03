@@ -1,0 +1,94 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Account">
+
+        <EditTextPreference
+            app:key="handle_title"
+            app:title="Your Handle"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="change_password"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Change Password" />
+
+        <EditTextPreference
+            android:key="add_friend"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Add Friend" />
+
+        <EditTextPreference
+            android:key="remove_friend"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Remove Friend" />
+
+        <EditTextPreference
+            android:key="start_conversation"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Send Message To"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="conversation"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Message" />
+
+        <EditTextPreference
+            android:key="delete_conversation"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Delete Conversation" />
+
+        <Preference
+            android:key="delete_account"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Delete Account" />
+
+        <Preference
+            android:key="log_out"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Log out" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Hoster Mode">
+
+        <SwitchPreferenceCompat
+            app:key="hoster_mode"
+            app:title="Enabled" />
+
+        <EditTextPreference
+            android:key="change_address"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Address"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
